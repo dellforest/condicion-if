@@ -1,0 +1,30 @@
+#Mariadelcarmen
+print("programa que pregunta nombre y edad, solo si es mayor de 18 permite ingresar un digito y valorarlo si es positivo, negativo o neutro.")
+
+nombre=input("¿cual es tu nombre? ")
+e=int(input("¿Que edad tienes?  "))
+
+if e>=18:
+    print("bienvenido al club ", nombre)
+    
+    
+    digito=int(input("ingresa tú numero "))
+    
+if digito==0:
+    print("cliente neutro ", digito)
+    
+    
+elif digito<=-1:
+    print("numero de cliente negativo ", digito)
+    viajes=["hospedaje rivera maya", "recorrido todo incluido tulum", "viajes gratis destino nacional"]
+    print("sus beneficios son: ", viajes)
+    
+    
+elif digito>=1:
+    print("numero de cliente positivo ", digito)
+    beneficios=["natacion","gimnasio","alberca","cancha de futbol"]
+    print("sus beneficios de socio son", beneficios)
+    
+     
+else:
+    print("edad no permitida ", nombre)
